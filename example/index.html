@@ -1,0 +1,14 @@
+<html ng-app="hmrTest">
+  <head>
+    <title>Sample App</title>
+  </head>
+  <body>
+    <div id='root' ui-view>
+    </div>
+    <script src="/static/bundle.js"></script>
+    <script type="text/ng-template" id="main.html">
+      <h1>{{vm.value}}</h1>
+      <button ng-click="vm.reload()">Reload</button>
+    </script>
+  </body>
+</html>
